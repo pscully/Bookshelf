@@ -1,2 +1,0 @@
-# Bookshelf
-Created with CodeSandbox
