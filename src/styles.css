@@ -10,6 +10,14 @@ ul {
   list-style: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 .book {
   padding: 10px 5px 5px 25px;
   margin-bottom: 25px;
@@ -23,4 +31,16 @@ ul {
 
 .book h3 {
   text-decoration: underline;
+}
+
+.button--action {
+  margin-left: 35px;
+  background: green;
+  color: white;
+  padding: 7px 10px 7px 10px;
+}
+
+.form--add {
+  margin-left: 35px;
+  margin-top: 15px;
 }
