@@ -1,4 +1,6 @@
 // A library holds books and has the ability to add new books to list.
+// A view shows the user the bookshelf and form to add new books
+// A librarian takes the user input and manages the book display
 
 class Library {
   constructor() {
@@ -55,7 +57,7 @@ class View {
   bindShowHideForm() {
     this.button.addEventListener('click', event => {
       this.form.classList.toggle('hidden');
-      console.log(event.target.value);
+
       if (event.target.value === 'Add New Book') {
         this.button.textContent = 'Close Form';
         this.button.value = 'Close Form';
@@ -76,6 +78,8 @@ class View {
     });
   }
 
+  // destroy the list and rebuild with fresh data
+
   displayBooks(books) {
     while (this.shelf.firstChild) {
       this.shelf.removeChild(this.shelf.firstChild);
@@ -88,6 +92,8 @@ class View {
 
     console.log('Books', books);
   }
+
+  // Helper functions
 
   createElement(el, className) {
     const element = document.createElement(el);

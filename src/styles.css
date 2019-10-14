@@ -1,13 +1,28 @@
+:root {
+  --darkColor: #2c2c2c;
+  --ctaColor: #1d70a2;
+  --backgroundColor: #6daedb;
+  --textColor: #173753;
+}
+
 body {
   font-family: sans-serif;
 }
 
 h1 {
   margin-left: 35px;
+  color: var(--textColor);
 }
 
 ul {
   list-style: none;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid var(--darkColor);
+  border-radius: 5px;
 }
 
 .hidden {
@@ -21,8 +36,9 @@ ul {
 .book {
   padding: 10px 5px 5px 25px;
   margin-bottom: 25px;
-  border: 1px solid black;
-  background: rgb(119, 129, 139);
+  border: 1px solid var(--darkColor);
+  border-radius: 10px;
+  background: var(--backgroundColor);
   max-width: 400px;
   box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.75);
@@ -31,13 +47,19 @@ ul {
 
 .book h3 {
   text-decoration: underline;
+  color: var(--textColor);
+}
+
+.book p {
+  color: var(--textColor);
 }
 
 .button--action {
   margin-left: 35px;
-  background: green;
+  background: var(--ctaColor);
   color: white;
   padding: 7px 10px 7px 10px;
+  border-radius: 5px;
 }
 
 .form--add {
